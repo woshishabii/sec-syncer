@@ -19,3 +19,4 @@ host = parse.urlparse(url=url).netloc
 os.system('rm -rf pub')
 os.system(f'wget --mirror --convert-links --no-parent {url} -P temp')
 os.system(f'mv temp/{host} pub')
+os.system('cp pub/sec.htm pub/index.html')
